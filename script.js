@@ -8,6 +8,7 @@ const questionEl = document.getElementById('question');
 const answerEl = document.getElementById('answer');
 const addCardBtn = document.getElementById('add-card');
 const clearBtn = document.getElementById('clear');
+const clearSingleCard=document.getElementById('clear-single-card')
 const addContainer = document.getElementById('add-container');
 
 // Keep track of current card
@@ -39,6 +40,8 @@ function createCard(data, index) {
     <p>
       ${data.question}
     </p>
+    <button id="clear-single-card" title="limpar card" class="clear btn">
+    <i class="fas fa-trash"></i>
   </div>
   <div class="inner-card-back">
     <p>
