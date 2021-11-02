@@ -1,6 +1,6 @@
 ## Memory Cards
 
-Flash card app para aprender. Mostra, adiciona e remove cartões para memorizar com perguntas e respostas. Projeto realizado no curso: 20 Web Projects With Vanilla JavaScript na plataforma Udemy.
+Flash card app para aprender. Mostra, adiciona e remove cartões para memorizar com perguntas e respostas. Projeto realizado no curso: 20 Web Projects With Vanilla JavaScript na plataforma Udemy. Veja o projeto final em guimarques9407.github.io/memory-cards/
 
 ## Project Specifications
 
