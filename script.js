@@ -38,14 +38,14 @@ function createCard(data, index) {
     <p>
       ${data.question}
     </p>
-    <button id="clearSingleCard" title="limpar card" class="clear btn" onclick="limpouCartao()">
+    <button id="clearSingleCard" title="limpar card" class="clear btn" onclick="clearSingleCard.apply(this, arguments)">
     <i class="fas fa-trash"></i></button>
   </div>
   <div class="inner-card-back">
     <p>
       ${data.answer}
     </p>
-    <button id="clearSingleCard" title="limpar card" class="clear btn" onclick="limpouCartao()">
+    <button id="clearSingleCard" title="limpar card" class="clear btn" onclick="clearSingleCard.apply(this, arguments)">
     <i class="fas fa-trash"></i></button>
   </div>
 </div>
@@ -76,8 +76,11 @@ function setCardsData(cards) {
   window.location.reload();
 }
 
-function limpouCartao() {
-  console.log("Clicou no botão de lixo");
+function clearSingleCard(e) {
+    if (!e) e = window.event;
+    e.stopPropagation()
+    cardsData.splice(currentActiveCard,1);
+    setCardsData(cardsData)
 }
 
 createCards();
